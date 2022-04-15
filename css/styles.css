@@ -1,0 +1,204 @@
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --white-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --secondary-bgr-color: #f5f4fa;
+  --fotter-color: #2f303a;
+  --accent-hero-button: #188ce8;
+  --address-contact-color: rgba(255, 255, 255, 0.6);
+}
+body {
+  font-family: Roboto, sans-serif;
+  background: var(--white-text-color);
+  color: var(--primary-text-color);
+}
+.list {
+  list-style: none;
+}
+.list .link.current {
+  color: var(--accent-color);
+}
+.hero-section .button,
+.filter-content .button {
+  font-family: inherit;
+  cursor: pointer;
+}
+/*Logo*/
+.logo {
+  font-family: 'Raleway';
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+}
+.logo-web {
+  color: var(--accent-color);
+}
+.logo-studio {
+  color: var(--white-text-color);
+}
+/*site-nav*/
+.header-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+  text-decoration: none;
+}
+.header-nav .link:hover,
+.header-nav .link:focus {
+  color: var(--accent-color);
+}
+/*Contacts*/
+.list .contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+.list .contact:hover,
+.list .contact:focus {
+  color: var(--accent-color);
+}
+/*Hero*/
+.hero-section {
+  background-color: var(--fotter-color);
+}
+.hero-section .title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+}
+.hero-section .button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.hero-section .button:hover,
+.hero-section .button:focus {
+  background: var(--accent-hero-button);
+}
+/*specifics*/
+.specifics-content .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+.specifics-content .text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+/*worck*/
+.worck-section .worck-title,
+.team-section .team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+/*team*/
+.team-section {
+  background-color: var(--secondary-bgr-color);
+}
+.team-content {
+  background: var(--white-text-color);
+}
+.team-content .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.team-content .text {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+/*footer*/
+.footer-page {
+  background: var(--fotter-color);
+}
+.address-section .text,
+.address-section .contact {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white-text-color);
+}
+.address-section .contact {
+  text-decoration: none;
+  color: var(--address-contact-color);
+}
+.address-section .contact:hover,
+.address-section .contact:focus {
+  color: var(--accent-color);
+}
+
+/*portfolio*/
+/*filter*/
+.filter-content .button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  background: var(--secondary-bgr-color);
+  border-radius: 4px;
+  border: none;
+}
+.filter-content .button:hover,
+.filter-content .button:focus {
+  background: var(--accent-color);
+  color: var(--white-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+/*exampels*/
+.example-link {
+  background: var(--white-text-color);
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.example-link .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+}
+.example-link .text {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
