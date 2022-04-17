@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 :root {
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
@@ -13,11 +21,17 @@ body {
   background: var(--white-text-color);
   color: var(--primary-text-color);
 }
+h1,h2,h3,ul,p {
+  margin: 0;
+}
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .list .link.current {
   color: var(--accent-color);
+}
 }
 .hero-section .button,
 .filter-content .button {
@@ -69,15 +83,18 @@ body {
 /*Hero*/
 .hero-section {
   background-color: var(--fotter-color);
+  margin-bottom: 90px;
+  text-align: center;
 }
 .hero-section .title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-text-color);
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 .hero-section .button {
   font-weight: 700;
@@ -90,12 +107,19 @@ body {
   color: var(--white-text-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 32px;
+  border: none;
+  border-radius: 4px;
+  border-color: transparent;
 }
 .hero-section .button:hover,
 .hero-section .button:focus {
   background: var(--accent-hero-button);
 }
 /*specifics*/
+.specifics-section, .worck-section, .team-section{
+  margin-bottom: 94px;
+}
 .specifics-content .title {
   font-weight: 700;
   font-size: 14px;
@@ -103,6 +127,8 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
+
+  margin-bottom: 10px;
 }
 .specifics-content .text {
   font-size: 14px;
@@ -118,6 +144,9 @@ body {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+
+  text-align: center;
+  margin-bottom: 50px;
 }
 /*team*/
 .team-section {
@@ -133,6 +162,9 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+
+
+  margin-bottom: 10px;
 }
 .team-content .text {
   font-size: 16px;
@@ -140,6 +172,10 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+.team-content .image {
+
+  margin-bottom: 30px;
 }
 /*footer*/
 .footer-page {
@@ -174,6 +210,8 @@ body {
   background: var(--secondary-bgr-color);
   border-radius: 4px;
   border: none;
+  padding: 6px 22px;
+
 }
 .filter-content .button:hover,
 .filter-content .button:focus {
